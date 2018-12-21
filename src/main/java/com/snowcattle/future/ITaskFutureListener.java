@@ -5,10 +5,8 @@ package com.snowcattle.future;
  */
 public interface ITaskFutureListener<V extends ITaskFuture<?>> extends EventListener {
 
-    /**
-     *  完成
-     * @param v
-     * @throws Exception
-     */
-    void operationComplete(ITaskFuture<V> future) throws Exception;
+	/**
+	 * 完成
+	 */
+	void operationComplete(ITaskFuture<V> future) throws Exception;
 }
